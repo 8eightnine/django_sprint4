@@ -24,5 +24,8 @@
       {% include "includes/post_card.html" %}
     </article>
   {% endfor %}
+  {% if not page_obj %}
+    <p class="text-center">Вы пока не сделали ни одной публикации</p>
+  {% endif %}
   {% include "includes/paginator.html" %}
 {% endblock %}
